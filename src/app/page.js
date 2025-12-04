@@ -198,7 +198,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Step 2 */}
               <div className="bg-white rounded-xl border border-[#2a9d8f] p-6 text-center">
                 <div className="w-16 h-16 bg-[#264653] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   2
@@ -207,8 +206,12 @@ export default function Home() {
                   Uruchom aplikację
                 </h3>
                 <p className="text-gray-600">
-                  Zeskanuj kod QR poniżej za pomocą aplikacji Expo Go lub
-                  kliknij w link, aby otworzyć Fashion Buddy
+                  Zeskanuj kod QR poniżej za pomocą aparatu lub kliknij w link,
+                  aby otworzyć Fashion Buddy.
+                </p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Po pierwszym uruchomieniu aplikacja zostanie zapisana w Expo
+                  Go i będziesz mógł uruchamiać ją bezpośrednio z aplikacji.
                 </p>
               </div>
             </div>
@@ -252,8 +255,6 @@ export default function Home() {
           </section>
         </div>
       </section>
-
-     
     </div>
   );
 }
