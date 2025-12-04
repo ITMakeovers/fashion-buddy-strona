@@ -1,6 +1,7 @@
 "use client";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { useState, useEffect } from "react";
 
@@ -23,7 +24,7 @@ const Navigation = () => {
   return (
     <nav className=" top sticky border-b border-gray-100 shadow-xs  ">
       <div className="flex justify-between items-center py-4  px-8">
-        <div className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image src="/logo.png" alt="Logo" width={50} height={50} />
           <div className="flex-col flex items-start justify-center gap-5">
             <span className="text-[25px] leading-0 font-normal  ">Fashion </span>
@@ -31,7 +32,7 @@ const Navigation = () => {
               Buddy
             </span>
           </div>
-        </div>
+        </Link>
 
         <div className="md:flex hidden items-center text-xl">
           <a href="/#wprowadzenie" className="mx-4">
