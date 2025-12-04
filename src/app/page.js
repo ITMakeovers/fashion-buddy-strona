@@ -229,7 +229,7 @@ export default function Home() {
               </div>
               <p className="text-lg mb-4">lub</p>
               <a
-                href="https://expo.dev/preview/update?message=2.0.0&updateRuntimeVersion=1.0.0&createdAt=2025-12-04T01%3A14%3A44.504Z&slug=exp&projectId=1e8c7ec1-ca05-4263-9139-5fdafd1b0314&group=788c636c-6c1d-4582-9aaf-0d88985993f0"
+                href="https://expo.dev/preview/update?message=2.1.0&updateRuntimeVersion=1.0.0&createdAt=2025-12-04T11%3A18%3A37.177Z&slug=exp&projectId=1e8c7ec1-ca05-4263-9139-5fdafd1b0314&group=b8274ca1-24dc-4949-b4c8-94092e5f6abf"
                 className="bg-white block w-fit mx-auto text-[#264653] px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg"
               >
                 Kliknij tutaj, aby uruchomić

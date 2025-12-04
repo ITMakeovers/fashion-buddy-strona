@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 
 export default function PrivacyNotice({
   appName = 'FashionBuddy',
-  contactEmail = 'kontakt@fashionbuddy.online',
+  contactEmail = 'fashion.buddy@onet.pl',
 }) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -24,7 +24,7 @@ export default function PrivacyNotice({
   };
 
   return (
-    <div className="max-w-3xl py-32 mx-auto p-4">
+    <div className="max-w-3xl py-8 md:py-32 mx-auto p-4">
       <div className="bg-white   rounded-2xl overflow-hidden">
         <div className="p-4 md:p-6">
           <div className="flex items-start justify-between gap-4">
