@@ -14,7 +14,7 @@ export default function Home() {
       img: "/screen1.png",
       title: "Innowacyjna aplikacja mobilna",
       description:
-        "Fashion Buddy to aplikacja mobilna, która łączy technologię z modą, aby pomóc Ci w pełni wykorzystać potencjał Twojej garderoby.",
+        "Fashion Buddy to aplikacja mobilna, która łączy technologię z modą aby pomóc Ci w pełni wykorzystać potencjał Twojej garderoby.",
     },
     {
       img: "/screen3.png",
@@ -150,8 +150,8 @@ export default function Home() {
             <p className="text-lg sm:text-xl max-w-3xl mx-auto">
               Fashion Buddy powstał z myślą o osobach, które chcą wyglądać
               stylowo każdego dnia, ale nie mają czasu ani pewności w dobieraniu
-              strojów. Łączymy technologię z modą, aby uczynić codzienne decyzje
-              związane z ubiorem prostymi i przyjemnymi.
+              strojów. Łączymy technologię z modą aby uczynić codzienne decyzje
+              związane z ubiorem - prostymi i przyjemnymi.
             </p>
           </div>
 
