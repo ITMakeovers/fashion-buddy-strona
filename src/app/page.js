@@ -13,13 +13,13 @@ export default function Home() {
       img: "/screen1.png",
       title: "Innowacyjna aplikacja mobilna",
       description:
-        "Fashion Buddy to aplikacja mobilna, która łączy technologię sztucznej inteligencji z modą, aby pomóc Ci zarządzać swoją garderobą i tworzyć stylizacje dopasowane do każdej okazji.",
+        "Fashion Buddy to aplikacja mobilna, która łączy technologię z modą, aby pomóc Ci w pełni wykorzystać potencjał Twojej garderoby.",
     },
     {
       img: "/screen3.png",
       title: "Wirtualna Garderoba",
       description:
-        "Skanuj i digitalizuj swoje ubrania, tworząc kompletną cyfrową garderobę w jednym miejscu. Przeglądaj swoje elementy, porządkuj je i zarządzaj nimi łatwiej niż kiedykolwiek.",
+        "Skanuj i digitalizuj swoje ubrania, tworząc kompletną cyfrową garderobę w jednym miejscu. Przeglądaj swoje elementy i zarządzaj nimi łatwiej niż kiedykolwiek.",
     },
     {
       img: "/screen4.png",
@@ -59,15 +59,15 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 md:py-20 px-4 sm:px-6 lg:px-8 scroll-m-2" id="wprowadzenie">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-5xl sm:text-6xl font-light text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl sm:text-6xl font-light text-gray-900 mb-6">
               Co to jest{" "}
               <span className="font-normal text-[#264653]">Fashion</span>
               <span className="ml-1 text-[#264653] font-extrabold">Buddy</span>?
             </h1>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="md:text-xl text-gray-700 max-w-3xl mx-auto">
               Twój osobisty asystent mody, który pomaga tworzyć idealne
               stylizacje i organizować garderobę
             </p>
@@ -76,8 +76,8 @@ export default function Home() {
           {/* Key Features - Carousel for Mobile, Star for Desktop */}
 
           {/* Mobile Carousel */}
-          <div className=" relative mb-12 max-w-[500px] mx-auto">
-            <div className="overflow-hidden">
+          <div className=" relative mb-12  max-w-[500px] mx-auto">
+            <div className="overflow-hidden ">
               <div
                 className="flex items-stretch transition-transform duration-500 ease-in-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -87,13 +87,13 @@ export default function Home() {
                     key={index}
                     className="w-full shrink-0 px-4 flex items-stretch"
                   >
-                    <div className="bg-white rounded-xl border border-[#2a9d8f]  p-8 ">
+                    <div className="bg-white rounded-xl border border-[#2a9d8f] p-8">
                       <Image
                         src={feature.img}
                         alt="Feature Icon"
-                        width={200}
-                        height={600}
-                        className="mx-auto mb-4 rounded-[33px] shadow-md"
+                        width={300}
+                        height={420}
+                        className="mx-auto mb-4 rounded-[33px] shadow-md object-contain max-h-[420px] w-auto"
                       />
                       <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
                         {feature.title}
@@ -139,7 +139,7 @@ export default function Home() {
           </div>
 
           {/* Mission Statement */}
-          <div className=" bg-[#2a9d8f]  rounded-2xl shadow-xl p-8 sm:p-12 text-[white] text-center">
+          <div className=" bg-[#2a9d8f]  rounded-2xl shadow-xl p-8 sm:p-12 text-[white] text-center mb-12">
             <div className="flex items-center gap-2 justify-center mb-4">
               <Rocket />
               <h2 className="text-3xl font-bold ">Nasza Misja</h2>
@@ -151,8 +151,139 @@ export default function Home() {
               związane z ubiorem prostymi i przyjemnymi.
             </p>
           </div>
+
+          {/* How to Launch Section */}
+          <section id="instrukcja" className="max-w-4xl mx-auto mt-20 scroll-m-4">
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
+              Jak uruchomić aplikację?
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              {/* Step 1 */}
+              <div className="bg-white rounded-xl border border-[#2a9d8f] p-6 text-center">
+                <div className="w-16 h-16 bg-[#264653] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  1
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Pobierz Expo Go
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Zainstaluj aplikację Expo Go ze sklepu Google Play Store lub
+                  Apple App Store na swoim urządzeniu mobilnym
+                </p>
+                <div className="flex justify-center gap-4">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=host.exp.exponent"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#2a9d8f] hover:underline font-semibold"
+                  >
+                    Google Play
+                  </a>
+                  <span className="text-gray-400">|</span>
+                  <a
+                    href="https://apps.apple.com/app/expo-go/id982107779"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#2a9d8f] hover:underline font-semibold"
+                  >
+                    App Store
+                  </a>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="bg-white rounded-xl border border-[#2a9d8f] p-6 text-center">
+                <div className="w-16 h-16 bg-[#264653] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  2
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Uruchom aplikację
+                </h3>
+                <p className="text-gray-600">
+                  Zeskanuj kod QR poniżej za pomocą aplikacji Expo Go lub
+                  kliknij w link, aby otworzyć Fashion Buddy
+                </p>
+              </div>
+            </div>
+
+            {/* QR Code Section */}
+            <div className="bg-linear-to-br from-[#264653] to-[#2a9d8f] rounded-2xl shadow-xl p-8 sm:p-12 text-white text-center">
+              <h3 className="text-2xl font-bold mb-6">Zeskanuj kod QR</h3>
+              <div className="bg-white p-6 rounded-xl inline-block mb-6">
+                <div className="w-52 h-52 bg-gray-200 rounded-lg flex items-center justify-center">
+                  <Image src="/kodQR.svg" alt="QR Code" width={208} height={208} className="w-full" />
+                </div>
+              </div>
+              <p className="text-lg mb-4">lub</p>
+              <a href="https://expo.dev/preview/update?message=2.0.0&updateRuntimeVersion=1.0.0&createdAt=2025-12-04T01%3A14%3A44.504Z&slug=exp&projectId=1e8c7ec1-ca05-4263-9139-5fdafd1b0314&group=788c636c-6c1d-4582-9aaf-0d88985993f0" className="bg-white block w-fit mx-auto text-[#264653] px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                Kliknij tutaj, aby uruchomić
+              </a>
+            </div>
+
+            <div className="bg-white rounded-xl border border-[#2a9d8f] p-6 text-center mt-8">
+              <div className="w-16 h-16 bg-[#264653] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                3
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Uzupełnij ankietę
+              </h3>
+              <p className="text-gray-600">
+                Pomóż nam dostosować aplikację do Twoich potrzeb, wypełniając
+                krótką ankietę którą otrzymasz na adres e-mail po paru dniach korzystania z aplikacji.
+              </p>
+            </div>
+          </section>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-[#264653] text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            {/* Project Info */}
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Fashion Buddy</h3>
+              <p className="text-gray-300 mb-4">
+                Praca inżynierska realizowana na Politechnice Gdańskiej
+              </p>
+              <div className="space-y-2">
+                <p className="text-gray-300">
+                  <span className="font-semibold">Autorzy:</span>
+                </p>
+                <ul className="text-gray-300 space-y-1 ml-4">
+                  <li>• Paweł Mroczek</li>
+                  <li>• Vincenzo Piras</li>
+                  <li>• Maciej Plec</li>
+                  <li>• Wiktor Szulc</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Kontakt</h3>
+              <p className="text-gray-300 mb-4">
+                Masz pytania lub sugestie? Skontaktuj się z nami!
+              </p>
+              <a 
+                href="mailto:fashionBuddy@onet.pl"
+                className="inline-flex items-center gap-2 text-[#2a9d8f] hover:text-[#21867a] font-semibold transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                fashionBuddy@onet.pl
+              </a>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-gray-600 pt-6 text-center text-gray-400">
+            <p>&copy; 2025 Fashion Buddy. Politechnika Gdańska - Wydział Elektroniki Informatyki i Telekomunikacji.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

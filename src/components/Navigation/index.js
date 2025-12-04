@@ -21,11 +21,11 @@ const Navigation = () => {
         </div>
 
         <div className="md:flex hidden items-center text-xl">
-          <a href="/#inwestycje" className="mx-4">
+          <a href="/#wprowadzenie" className="mx-4">
             Co to fashion buddy?
           </a>
 
-          <a href="#kontakt" className="mx-4">
+          <a href="#instrukcja" className="mx-4">
             Jak uruchomić aplikację?
           </a>
         </div>
